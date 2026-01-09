@@ -18,7 +18,7 @@ GNU General Public License for more details.
 from pathlib import Path
 import webbrowser
 
-from nvwcconf.nvplugin_locale import _
+from nvwcconf.nvwcconf_locale import _
 from nvlib.controller.plugin.plugin_base import PluginBase
 
 
@@ -85,11 +85,27 @@ class Plugin(PluginBase):
             self._wordCounter.set_ignore_regex(
                 self._prefs['additional_chars_to_ignore']
             )
+        except AttributeError:
+            pass
+        try:
             self._wordCounter.set_separator_regex(
                 self._prefs['additional_word_separators']
             )
         except AttributeError:
             pass
+        self.update_word_count()
+
+    def update_word_count(self):
+        if self._mdl.prjFile is None:
+            return
+
+        for scId in self._mdl.novel.sections:
+            section = self._mdl.novel.sections[scId]
+            if section.sectionContent:
+                section.wordCount = self._wordCounter.get_word_count(
+                    section.sectionContent
+                )
+        self._mdl.notify_observers()
 
     def on_quit(self):
         """Write back the configuration file.
