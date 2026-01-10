@@ -19,8 +19,8 @@ from pathlib import Path
 import webbrowser
 
 from nvwordcnt.nvwordcnt_locale import _
+from nvlib.configuration.configuration_json import ConfigurationJson
 from nvlib.controller.plugin.plugin_base import PluginBase
-from nvwordcnt.configuration_json import ConfigurationJson
 from nvwordcnt.word_counter import WordCounter
 
 
