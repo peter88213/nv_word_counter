@@ -15,12 +15,12 @@ but WITHOUT ANY WARRANTY; without even the implied warranty of
 MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 GNU General Public License for more details.
 """
-import json
 from pathlib import Path
 import webbrowser
 
 from nvwordcnt.nvwordcnt_locale import _
 from nvlib.controller.plugin.plugin_base import PluginBase
+from nvwordcnt.configuration_json import ConfigurationJson
 from nvwordcnt.word_counter import WordCounter
 
 
@@ -35,10 +35,11 @@ class Plugin(PluginBase):
 
     INI_FILENAME = 'wordcounter.json'
     INI_FILEPATH = '.novx/config'
-    DEFAULTS = {
-        'additional_word_separators': ['—', '–'],
-        'additional_chars_to_ignore': []
-    }
+    SETTINGS = dict(
+        additional_word_separators=['—', '–'],
+        additional_chars_to_ignore=[]
+    )
+    OPTIONS = {}
 
     def install(self, model, view, controller):
         """Install the plugin.
@@ -62,23 +63,17 @@ class Plugin(PluginBase):
         )
 
         #--- Load configuration.
-        self._prefs = {}
         try:
             homeDir = str(Path.home()).replace('\\', '/')
             configDir = f'{homeDir}/{self.INI_FILEPATH}'
         except:
             configDir = '.'
         self.iniFile = f'{configDir}/{self.INI_FILENAME}'
-        try:
-            with open(self.iniFile, 'r', encoding='utf-8') as f:
-                prefs = json.load(f)
-        except FileNotFoundError:
-            prefs = {}
-        for key in self.DEFAULTS:
-            if key in prefs:
-                self._prefs[key] = prefs[key]
-            else:
-                self._prefs[key] = self.DEFAULTS[key]
+        self._configuration = ConfigurationJson(self.SETTINGS, self.OPTIONS)
+        self._prefs = {}
+        self._configuration.read(self.iniFile)
+        self._prefs.update(self._configuration.settings)
+        self._prefs.update(self._configuration.options)
 
         #--- Replace the default word counter with the customizable one.
         self._wordCounter = WordCounter()
@@ -119,13 +114,7 @@ class Plugin(PluginBase):
         
         Overrides the superclass method.
         """
-        with open(self.iniFile, 'w', encoding='utf-8') as f:
-            json.dump(
-                self._prefs,
-                f,
-                ensure_ascii=False,
-                indent=2,
-            )
+        self._configuration.write(self.iniFile)
 
     def open_help(self):
         webbrowser.open(self.HELP_URL)
