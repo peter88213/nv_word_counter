@@ -1,8 +1,8 @@
-# nv_wc_configurator
+# nv_word_counter
 
 The [novelibre](https://github.com/peter88213/novelibre/) Python program helps authors organize novels.  
 
-*nv_wc_configurator* is a plugin providing a word counter configurator. 
+*nv_word_counter* is a plugin providing a word counter configurator. 
 
 ![Screenshot](docs/Screenshots/screen01.png)
 
@@ -14,10 +14,10 @@ The [novelibre](https://github.com/peter88213/novelibre/) Python program helps a
 
 ### Default: Executable Python zip archive
 
-Download the latest release [nv_wc_configurator_v0.2.0.pyz](https://github.com/peter88213/nv_wc_configurator/raw/main/dist/nv_wc_configurator_v0.2.0.pyz)
+Download the latest release [nv_word_counter_v0.2.0.pyz](https://github.com/peter88213/nv_word_counter/raw/main/dist/nv_word_counter_v0.2.0.pyz)
 
-- Launch *nv_wc_configurator_v0.2.0.pyz* by double-clicking (Windows desktop),
-- or execute `python nv_wc_configurator_v0.2.0.pyz` (Windows), resp. `python3 nv_wc_configurator_v0.2.0.pyz` (Linux) on the command line.
+- Launch *nv_word_counter_v0.2.0.pyz* by double-clicking (Windows desktop),
+- or execute `python nv_word_counter_v0.2.0.pyz` (Windows), resp. `python3 nv_word_counter_v0.2.0.pyz` (Linux) on the command line.
 
 > [!IMPORTANT]
 > Many web browsers recognize the download as an executable file and offer to open it immediately. 
@@ -32,9 +32,9 @@ Download the latest release [nv_wc_configurator_v0.2.0.pyz](https://github.com/p
 
 ### Alternative: Zip file
 
-The package is also available in zip format: [nv_wc_configurator_v0.2.0.zip](https://github.com/peter88213/nv_wc_configurator/raw/main/dist/nv_wc_configurator_v0.2.0.zip)
+The package is also available in zip format: [nv_word_counter_v0.2.0.zip](https://github.com/peter88213/nv_word_counter/raw/main/dist/nv_word_counter_v0.2.0.zip)
 
-- Extract the *nv_wc_configurator_v0.2.0* folder from the downloaded zipfile "nv_wc_configurator_v0.2.0.zip".
+- Extract the *nv_word_counter_v0.2.0* folder from the downloaded zipfile "nv_word_counter_v0.2.0.zip".
 - Move into this new folder and launch *setup.py* by double-clicking (Windows/Linux desktop), 
 - or execute `python setup.py` (Windows), resp. `python3 setup.py` (Linux) on the command line.
 
@@ -50,6 +50,6 @@ See the [online manual](docs/usage.md)
 
 ## License
 
-This is Open Source software, and the *nv_wc_configurator* plugin is licensed under GPLv3. See the
+This is Open Source software, and the *nv_word_counter* plugin is licensed under GPLv3. See the
 [GNU General Public License website](https://www.gnu.org/licenses/gpl-3.0.en.html) for more
-details, or consult the [LICENSE](https://github.com/peter88213/nv_wc_configurator/blob/main/LICENSE) file.
+details, or consult the [LICENSE](https://github.com/peter88213/nv_word_counter/blob/main/LICENSE) file.

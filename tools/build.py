@@ -1,9 +1,9 @@
-"""Build the nv_wc_configurator novelibre plugin package.
+"""Build the nv_word_counter novelibre plugin package.
         
 Note: VERSION must be updated manually before starting this script.
 
 Copyright (c) Peter Triesberger
-For further information see https://github.com/peter88213/nv_wc_configurator
+For further information see https://github.com/peter88213/nv_word_counter
 License: GNU GPLv3 (https://www.gnu.org/licenses/gpl-3.0.en.html)
 """
 import os
@@ -17,8 +17,8 @@ VERSION = '0.2.0'
 
 class PluginBuilder(PackageBuilder):
 
-    PRJ_NAME = 'nv_wc_configurator'
-    LOCAL_LIB = 'nvwcconf'
+    PRJ_NAME = 'nv_word_counter'
+    LOCAL_LIB = 'nvwordcnt'
     GERMAN_TRANSLATION = False
 
 

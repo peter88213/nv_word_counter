@@ -1,9 +1,9 @@
-"""nv_wc_configurator installer library module. 
+"""nv_word_counter installer library module. 
 
 Version @release
 
 Copyright (c) Peter Triesberger
-For further information see https://github.com/peter88213/nv_wc_configurator
+For further information see https://github.com/peter88213/nv_word_counter
 License: GNU GPLv3 (https://www.gnu.org/licenses/gpl-3.0.en.html)
 """
 import os
@@ -13,7 +13,7 @@ from shutil import copytree
 import sys
 import zipfile
 
-PLUGIN = 'nv_wc_configurator.py'
+PLUGIN = 'nv_word_counter.py'
 VERSION = '@release'
 
 pyz = os.path.dirname(__file__)

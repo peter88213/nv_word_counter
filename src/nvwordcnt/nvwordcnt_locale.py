@@ -1,7 +1,7 @@
-"""Locale settings for nv_wc_configurator.
+"""Locale settings for nv_word_counter.
 
 Copyright (c) Peter Triesberger
-For further information see https://github.com/peter88213/nv_wc_configurator
+For further information see https://github.com/peter88213/nv_word_counter
 License: GNU GPLv3 (https://www.gnu.org/licenses/gpl-3.0.en.html)
 """
 import gettext
@@ -18,7 +18,7 @@ except:
     CURRENT_LANGUAGE = locale.getdefaultlocale()[0][:2]
 try:
     t = gettext.translation(
-        'nv_wc_configurator',
+        'nv_word_counter',
         LOCALE_PATH,
         languages=[CURRENT_LANGUAGE],
     )

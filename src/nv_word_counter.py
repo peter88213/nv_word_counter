@@ -1,8 +1,8 @@
-"""Plugin template for novelibre.
+"""Alternative word count plugin class for novelibre.
 
 Requires Python 3.7+
 Copyright (c) Peter Triesberger
-For further information see https://github.com/peter88213/nv_wc_configurator
+For further information see https://github.com/peter88213/nv_word_counter
 License: GNU GPLv3 (https://www.gnu.org/licenses/gpl-3.0.en.html)
 
 This program is free software: you can redistribute it and/or modify
@@ -18,21 +18,20 @@ GNU General Public License for more details.
 from pathlib import Path
 import webbrowser
 
-from nvwcconf.nvwcconf_locale import _
+from nvwordcnt.nvwordcnt_locale import _
 from nvlib.controller.plugin.plugin_base import PluginBase
 
 
-# this should be the first import
 class Plugin(PluginBase):
     """Template plugin class."""
     VERSION = '@release'
-    API_VERSION = '5.50'
-    DESCRIPTION = 'Word counter configurator'
-    URL = 'https://github.com/peter88213/nv_wc_configurator'
+    API_VERSION = '5.30'
+    DESCRIPTION = 'Customizable word counter'
+    URL = 'https://github.com/peter88213/nv_word_counter'
 
-    HELP_URL = 'https://github.com/peter88213/nv_wc_configurator/tree/main/docs/nv_wc_configurator'
+    HELP_URL = 'https://github.com/peter88213/nv_word_counter/tree/main/docs/nv_word_counter'
 
-    INI_FILENAME = 'wcconfig.ini'
+    INI_FILENAME = 'wordcounter.ini'
     INI_FILEPATH = '.novx/config'
     SETTINGS = dict(
         additional_word_separators='—–',
@@ -55,7 +54,7 @@ class Plugin(PluginBase):
         #--- Configure the main menu.
 
         # Add an entry to the Help menu.
-        label = _('nv_wc_configurator Online help')
+        label = _('nv_word_counter Online help')
         self._ui.helpMenu.add_command(
             label=label,
             command=self.open_help,
