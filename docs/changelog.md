@@ -5,6 +5,13 @@
 ## Changelog
 
 
+### Version 0.4.0
+
+- Using JSON for the configuration file.
+
+Compatibility: novelibre version 5.30 API
+
+
 ### Version 0.3.0
 
 - Including the alternative WordCounter class to replace the default at runtime.
@@ -13,8 +20,3 @@
 
 Compatibility: novelibre version 5.30 API
 
-### Version 0.4.0
-
-- Using JSON for the configuration file.
-
-Compatibility: novelibre version 5.30 API
