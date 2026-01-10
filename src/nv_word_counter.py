@@ -77,8 +77,11 @@ class Plugin(PluginBase):
         self._prefs.update(self.configuration.settings)
         self._prefs.update(self.configuration.options)
 
+        #--- Replace the default word counter with the customizable one.
         self._wordCounter = WordCounter()
         self._mdl.nvService.change_word_counter(self._wordCounter)
+
+        #--- Apply the settings read from the configuration file.
         self.configure_word_counter()
 
     def configure_word_counter(self):
