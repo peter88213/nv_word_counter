@@ -27,7 +27,7 @@ from nvwordcnt.word_counter import WordCounter
 class Plugin(PluginBase):
     """Alternative word count plugin class."""
     VERSION = '@release'
-    API_VERSION = '5.30'
+    API_VERSION = '5.50'
     DESCRIPTION = 'Customizable word counter'
     URL = 'https://github.com/peter88213/nv_word_counter'
 
