@@ -14,7 +14,7 @@ The [novelibre](https://github.com/peter88213/novelibre/) Python program helps a
 
 ### Default: Executable Python zip archive
 
-Download the latest release [nv_word_counter_v0.7.0.pyz](https://github.com/peter88213/nv_word_counter/raw/main/dist/nv_word_counter_v0.7.0.pyz)
+Download the latest release [nv_word_counter_v0.7.0.pyz](https://github.com/peter88213/nv_word_counter/raw/main/dist/nv_word_counter_v0.7.0.pyz) (15 KB)
 
 - Launch *nv_word_counter_v0.7.0.pyz* by double-clicking (Windows desktop),
 - or execute `python nv_word_counter_v0.7.0.pyz` (Windows), resp. `python3 nv_word_counter_v0.7.0.pyz` (Linux) on the command line.
@@ -32,7 +32,7 @@ Download the latest release [nv_word_counter_v0.7.0.pyz](https://github.com/pete
 
 ### Alternative: Zip file
 
-The package is also available in zip format: [nv_word_counter_v0.7.0.zip](https://github.com/peter88213/nv_word_counter/raw/main/dist/nv_word_counter_v0.7.0.zip)
+The package is also available in zip format: [nv_word_counter_v0.7.0.zip](https://github.com/peter88213/nv_word_counter/raw/main/dist/nv_word_counter_v0.7.0.zip) (16 KB)
 
 - Extract the *nv_word_counter_v0.7.0* folder from the downloaded zipfile "nv_word_counter_v0.7.0.zip".
 - Move into this new folder and launch *setup.py* by double-clicking (Windows/Linux desktop), 
