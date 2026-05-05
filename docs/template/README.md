@@ -52,4 +52,4 @@ See the [online manual](docs/usage.md)
 
 This is Open Source software, and the *nv_word_counter* plugin is licensed under GPLv3. See the
 [GNU General Public License website](https://www.gnu.org/licenses/gpl-3.0.en.html) for more
-details, or consult the [LICENSE](https://github.com/peter88213/nv_word_counter/blob/main/LICENSE) file.
+details, or consult the [LICENSE](LICENSE) file.
