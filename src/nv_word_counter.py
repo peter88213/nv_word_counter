@@ -42,7 +42,7 @@ class Plugin(PluginBase):
     OPTIONS = {}
 
     def install(self, model, view, controller):
-        """Install the plugin.
+        """Install the plugin at runtime.
         
         Positional arguments:
             model -- reference to the novelibre main model instance.
