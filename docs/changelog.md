@@ -5,6 +5,15 @@
 ## Changelog
 
 
+### Version 0.8.1
+
+- Using the novelibre 5.63+ help service.
+- Refactored the code
+
+API: 5.63
+Based on novelibre 5.63.1
+
+
 ### Version 0.7.0
 
 - Refactored the code for better maintainability.
