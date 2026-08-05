@@ -44,7 +44,7 @@ The package is also available in zip format: [nv_word_counter_v$Version.zip](htt
 
 ## Usage
 
-See the [online manual](docs/usage.md)
+See the [online manual](https://peter88213.github.io/nv_word_counter/help)
 
 ---
 

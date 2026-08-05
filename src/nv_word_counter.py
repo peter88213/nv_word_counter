@@ -30,8 +30,8 @@ class Plugin(PluginBase):
     API_VERSION = '5.50'
     DESCRIPTION = 'Customizable word counter'
     URL = 'https://github.com/peter88213/nv_word_counter'
-
-    HELP_URL = 'https://github.com/peter88213/nv_word_counter/tree/main/docs/nv_word_counter'
+    HELP_SITE = 'https://peter88213.github.io/nv_word_counter'
+    HELP_PAGE = 'help'
 
     INI_FILENAME = 'wordcounter.json'
     INI_FILEPATH = '.novx/config'
@@ -53,14 +53,9 @@ class Plugin(PluginBase):
         """
         super().install(model, view, controller)
 
-        #--- Configure the main menu.
+        #--- Configure the user interface.
 
-        # Add an entry to the Help menu.
-        label = _('nv_word_counter Online help')
-        self._ui.helpMenu.add_command(
-            label=label,
-            command=self.open_help,
-        )
+        self._add_help_menu_entry(_('nv_word_counter plugin help'))
 
         #--- Load configuration.
         try:
