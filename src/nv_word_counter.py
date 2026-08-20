@@ -119,6 +119,3 @@ class Plugin(PluginBase):
                 self._configuration.settings[keyword] = self._prefs[keyword]
         self._configuration.write()
 
-    def open_help(self):
-        webbrowser.open(self.HELP_URL)
-
