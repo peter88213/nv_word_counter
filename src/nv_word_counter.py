@@ -1,7 +1,7 @@
 """Alternative word count plugin class for novelibre.
 
 Requires Python 3.7+
-Copyright (c) Peter Triesberger
+Copyright (c) 2026 Peter Triesberger
 For further information see https://github.com/peter88213/nv_word_counter
 License: GNU GPLv3 (https://www.gnu.org/licenses/gpl-3.0.en.html)
 
@@ -16,7 +16,6 @@ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 GNU General Public License for more details.
 """
 from pathlib import Path
-import webbrowser
 
 from nvwordcnt.nvwordcnt_locale import _
 from nvlib.configuration.configuration_json import ConfigurationJson
